@@ -10,14 +10,6 @@ models.Base.metadata.create_all(bind=engine)
 app = FastAPI(description="LIA helps you keep track and discover news books you might like")
 
 
-# Dependency
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
-
 @app.on_event("startup")
 def startup_db_client():
     print("LIA is on!")

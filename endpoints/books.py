@@ -3,14 +3,7 @@ from fastapi import Depends, APIRouter
 from sqlalchemy.orm import Session
 import schemas
 from crud import crud_books
-
-# Dependency
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
+from endpoints.users import get_db
 
 
 router = APIRouter(prefix="/books",
