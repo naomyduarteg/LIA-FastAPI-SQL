@@ -1,6 +1,7 @@
 from sqlalchemy.orm import Session
 from fastapi import HTTPException, status
-import models, schemas
+import models
+from schemas.users import UserCreate
 
 
 def get_user(db: Session, user_id: int):
@@ -15,7 +16,7 @@ def get_users(db: Session, skip: int = 0, limit: int = 100):
     return db.query(models.User).offset(skip).limit(limit).all()
 
 
-def create_user(db: Session, user: schemas.UserCreate):
+def create_user(db: Session, user: UserCreate):
     fake_hashed_password = user.password + "notreallyhashed"
     db_user = models.User(email=user.email, hashed_password=fake_hashed_password)
     db.add(db_user)
@@ -28,6 +29,6 @@ def delete_user(db: Session, user_id: int):
     db.commit()
 
     if user_to_delete == 1:
-        return f"Book with id {user_id} deleted sucessfully"
+        return f"User with id {user_id} deleted sucessfully"
     
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Book with id {user_id} not found!")

@@ -24,6 +24,7 @@ class Book(Base):
     description = Column(String, index=True)
     genre = Column(String, index=True)
     classification = Column(String, index=True)
+    pages = Column(Integer, index=True)
     owner_id = Column(Integer, ForeignKey("users.id"))
 
     owner = relationship("User", back_populates="books")

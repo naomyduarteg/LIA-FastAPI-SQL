@@ -7,7 +7,7 @@ from routes.api import router as api_router
 
 models.Base.metadata.create_all(bind=engine)
 
-app = FastAPI(description="LIA helps you keep track and discover news books you might like")
+app = FastAPI(description="LIA helps you keep track and discover books you might like")
 
 
 @app.on_event("startup")
