@@ -12,14 +12,14 @@ class BookBase(BaseModel): #creating
 
     @validator('classification')
     def classification_must_be(cls, classification):
-        classes = ['Excelent', 'Good', 'Bad']
+        classes = ['Excellent', 'Good', 'Bad', 'Horrible']
         if classification not in classes:
-            raise ValueError(f'Class must be in {classes}')
+            raise ValueError(f'Classification must be in {classes}')
         return classification
 
     @validator('genre')
     def genre_must_be_in_genres(cls, genre):
-        genres = ['Fantasy','Science Fiction', 'Dystopian', 'Fiction Novel', 'Action and Adventure', 'Mystery', 'Horror', 'Suspense', 'Graphic Novel', 'Nonfiction']
+        genres = ['Fantasy, Adventure','Science Fiction', 'Dystopian', 'Fiction Novel', 'Mystery, Suspense, Horror', 'Graphic Novel', 'Nonfiction']
         if genre not in genres:
             raise ValueError(f'Genre must be in {genres}')
         return genre
