@@ -20,24 +20,24 @@ def read_books(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     return books
 
 @router.get("/classification/{classification}", response_model=list[Book], response_description="List books by classification")
-def class_books(classification: str, db: Session = Depends(get_db)):
-    books = crud_books.get_books_by_classification(db, classification)
+def class_books(user_id: int, classification: str, db: Session = Depends(get_db)):
+    books = crud_books.get_books_by_classification(db, user_id, classification)
     return books
 
 @router.get("/author/{author}", response_model=list[Book], response_description="List books by author")
-def class_books(author: str, db: Session = Depends(get_db)):
-    books = crud_books.get_books_by_author(db, author)
+def class_books(user_id: int, author: str, db: Session = Depends(get_db)):
+    books = crud_books.get_books_by_author(db, user_id, author)
     return books
 
 @router.get("/genre/{genre}", response_model=list[Book], response_description="List books by genre")
-def class_books(genre: str, db: Session = Depends(get_db)):
-    books = crud_books.get_books_by_genre(db, genre)
+def class_books(user_id: int, genre: str, db: Session = Depends(get_db)):
+    books = crud_books.get_books_by_genre(db, user_id, genre)
     return books
 
 @router.put("/{id}", response_description="Update a book", response_model=Book)
-def update_book(book_id: int, book: UpdateBook, db: Session = Depends(get_db)):
-    return crud_books.update_book(db, book_id, book)
+def update_book(user_id: int, book_id: int, book: UpdateBook, db: Session = Depends(get_db)):
+    return crud_books.update_book(db, user_id, book_id, book)
 
 @router.delete("/{book_id}", response_description="Delete a book")
-def delete_book(book_id: int, db: Session = Depends(get_db)):
-    return crud_books.delete_user_book(db, book_id)
+def delete_book(user_id: int, book_id: int, db: Session = Depends(get_db)):
+    return crud_books.delete_user_book(db, user_id, book_id)

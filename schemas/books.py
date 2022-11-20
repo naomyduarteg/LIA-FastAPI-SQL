@@ -19,7 +19,7 @@ class BookBase(BaseModel): #creating
 
     @validator('genre')
     def genre_must_be_in_genres(cls, genre):
-        genres = ['Fantasy, Adventure','Science Fiction', 'Dystopian', 'Fiction Novel', 'Mystery, Suspense, Horror', 'Graphic Novel', 'Nonfiction']
+        genres = ['Fantasy, Adventure', 'Science Fiction', 'Dystopian', 'Fiction Novel', 'Mystery, Suspense, Horror', 'Graphic Novel', 'Nonfiction']
         if genre not in genres:
             raise ValueError(f'Genre must be in {genres}')
         return genre

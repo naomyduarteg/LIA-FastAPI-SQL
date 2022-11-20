@@ -15,19 +15,19 @@ def create_user_book(db: Session, book: BookCreate, user_id: int):
     db.refresh(db_book)
     return db_book
 
-def get_books_by_classification(db: Session, classification: str):
-    return db.query(models.Book).filter(models.Book.classification == classification).all()
+def get_books_by_classification(db: Session, user_id: int, classification: str):
+    return db.query(models.Book).filter(models.Book.owner_id == user_id, models.Book.classification == classification).all()
 
-def get_books_by_author(db: Session, author: str):
-    return db.query(models.Book).filter(models.Book.author == author).all()
+def get_books_by_author(db: Session, user_id: int, author: str):
+    return db.query(models.Book).filter(models.Book.owner_id == user_id, models.Book.author == author).all()
 
-def get_books_by_genre(db: Session, genre: str):
-    return db.query(models.Book).filter(models.Book.genre == genre).all()
+def get_books_by_genre(db: Session, user_id:int, genre: str):
+    return db.query(models.Book).filter(models.Book.owner_id == user_id, models.Book.genre == genre).all()
 
-def update_book(db: Session, book_id: int, book: UpdateBook):
+def update_book(db: Session, user_id: int, book_id: int, book: UpdateBook):
     book = {k: v for k, v in book.dict().items() if v is not None}
     if len(book) >= 1:
-        update_result = db.query(models.Book).filter(models.Book.id == book_id).update(book)
+        update_result = db.query(models.Book).filter(models.Book.owner_id == user_id, models.Book.id == book_id).update(book)
 
         if update_result == 0:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Book not found!")
@@ -38,11 +38,11 @@ def update_book(db: Session, book_id: int, book: UpdateBook):
 
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Book not found!") 
     
-def delete_user_book(db: Session, book_id: int):
-    book_to_delete = db.query(models.Book).filter(models.Book.id == book_id).delete()
+def delete_user_book(db: Session, user_id: int, book_id: int):
+    book_to_delete = db.query(models.Book).filter(models.Book.owner_id == user_id, models.Book.id == book_id).delete()
     db.commit()
 
     if book_to_delete == 1:
-        return f"Book with id {book_id} deleted sucessfully"
+        return f"Book from user {user_id} with id {book_id} deleted sucessfully"
     
-    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Book with id {book_id} not found!")
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"User or book id must be wrong.")
