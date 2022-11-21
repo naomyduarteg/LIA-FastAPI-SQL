@@ -1,4 +1,4 @@
-from database import SessionLocal
+from data.database import SessionLocal
 from fastapi import Depends, APIRouter, HTTPException
 from sqlalchemy.orm import Session
 from schemas.users import UserCreate, User

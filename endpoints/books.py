@@ -1,4 +1,3 @@
-from database import SessionLocal
 from fastapi import Depends, APIRouter
 from sqlalchemy.orm import Session
 from schemas.books import Book, BookCreate, UpdateBook

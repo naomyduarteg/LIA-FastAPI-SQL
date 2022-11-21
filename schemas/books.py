@@ -12,7 +12,7 @@ class BookBase(BaseModel): #creating
 
     @validator('classification')
     def classification_must_be(cls, classification):
-        classes = ['Excellent', 'Good', 'Bad', 'Horrible']
+        classes = ['Excellent', 'Good', 'Bad', 'Very bad']
         if classification not in classes:
             raise ValueError(f'Classification must be in {classes}')
         return classification

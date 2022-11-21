@@ -1,13 +1,17 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+import pandas as pd 
+
 
 SQLALCHEMY_DATABASE_URL = "sqlite:///./sql_app.db"
 # SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:password@localhost:3306/db_LIA?charset=utf8"
 
-engine = create_engine(
-    SQLALCHEMY_DATABASE_URL
-)
+engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
+
+#transforming the SQL table to CSV and exporting it. This table will load everytime we run the API and will be used to train the model 
+df = pd.read_sql('SELECT * FROM books', con=engine)
+df.to_csv(r'd:\naomy\LIA-FastAPI-MySQL\data\data.csv', index = False)

@@ -2,7 +2,7 @@ from fastapi import Depends, FastAPI, HTTPException
 from sqlalchemy.orm import Session
 import models
 import uvicorn
-from database import SessionLocal, engine
+from data.database import SessionLocal, engine
 from routes.api import router as api_router
 
 models.Base.metadata.create_all(bind=engine)

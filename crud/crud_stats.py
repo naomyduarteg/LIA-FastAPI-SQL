@@ -23,7 +23,7 @@ def get_mode_author(db: Session, user_id: int):
     if mode_author and top_rated:
         return f"Your most read and top rated author is, respectively, {mode_author} and {top_rated}."
 
-    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"User with id {user_id} not found!")
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Not found!")
 
 def get_most_least_genre(db: Session, user_id: int, entry: str):
     if entry == 'most':
