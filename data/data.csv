@@ -76,3 +76,38 @@ id,title,author,description,genre,classification,pages,owner_id
 75,O homem do castelo alto,Phillip K Dick,Surtado,Science Fiction,Bad,312,1
 76,O homem duplo,Phillip K Dick,Mais uma história surtada,Science Fiction,Bad,360,1
 77,Estamos todos completamente transtornados,Karen Joy Fowler,Bem interessante,Fiction Novel,Good,336,1
+78,Crônicas de uma morte anunciada,Gabriel Garcia Marquez,,Fiction Novel,Excellent,160,3
+79,Cem anos de solidão,Gabriel Garcia Marquez,,Fiction Novel,Excellent,432,3
+80,O guia do mochileiro das galáxias,Douglas Adams,,Science Fiction,Excellent,208,3
+81,Maze runner: correr ou morrer,James Dashner,,Science Fiction,Excellent,428,3
+82,O mal nosso de cada dia,Donald Ray Pollock,,"Mystery, Suspense, Horror",Excellent,304,3
+83,Caixa de pássaros,Josh Malerman,,"Mystery, Suspense, Horror",Excellent,272,3
+84,Tudo é rio,Carla Madeira,,Fiction Novel,Excellent,210,3
+85,1984,George Orwell,,Dystopian,Good,416,3
+86,O apanhador de sonhos,Stephen King,,"Mystery, Suspense, Horror",Good,656,3
+87,Cujo,Stephen King,,"Mystery, Suspense, Horror",Good,376,3
+88,A metade sombria,Stephen King,,"Mystery, Suspense, Horror",Good,464,3
+89,O cemitério,Stephen King,,"Mystery, Suspense, Horror",Bad,424,3
+90,A hora do lobisomen,Stephen King,,"Mystery, Suspense, Horror",Good,152,3
+91,Sob a redoma,Stephen King,,"Mystery, Suspense, Horror",Good,960,3
+92,Mr. Mercedes,Stephen King,,"Mystery, Suspense, Horror",Good,400,3
+93,A balada do black Tom,Victor LaValle,,"Mystery, Suspense, Horror",Good,146,3
+94,Eu sou a lenda,Richard Matheson,,Science Fiction,Good,384,3
+95,Eu estou pensando em acabar com tudo,Ian Reid,,"Mystery, Suspense, Horror",Good,224,3
+96,Tempo estranho,Joe Hill,,"Mystery, Suspense, Horror",Good,562,3
+97,Billy Summers,Stephen King,,"Mystery, Suspense, Horror",Good,472,3
+98,As ruínas,Scott Smith,,Fiction Novel,Good,368,3
+99,O chamado do cuco,Robert Galbraith,,Fiction Novel,Bad,448,3
+100,E não sobrou nenhum,Agatha Christie,,Fiction Novel,Good,400,3
+101,Nosferatu,Joe Hill,,"Mystery, Suspense, Horror",Good,608,3
+102,Mestre das chamas,Joe Hill,,"Mystery, Suspense, Horror",Good,592,3
+103,O menino que desenhava monstros,Keith Donohue,,"Mystery, Suspense, Horror",Good,256,3
+104,Crepúsculo,Stephenie Meyer,,"Fantasy, Adventure",Very bad,480,3
+105,Aniquilação,Jeff VanderMeer,,Science Fiction,Bad,171,3
+106,A menina que roubava livros,Markus Zusak,,Fiction Novel,Excellent,480,3
+107,Deus um delírio,Richard Dawkins,,Nonfiction,Good,528,3
+108,O maior espetáculo da Terra,Richard Dawkins,,Nonfiction,Good,472,3
+109,Malorie,Josh Malerman,,"Mystery, Suspense, Horror",Very bad,288,3
+110,Canção de ninar,Leila Slimani,,"Mystery, Suspense, Horror",Good,206,3
+111,Crepúsculo,Stephenie Meyer,Um dos piores livros já produzidos,"Fantasy, Adventure",Very bad,480,1
+112,A menina que roubava livros,Markus Zusak,Livro excelente sobre as desgraças do nazismo,Fiction Novel,Excellent,480,1
