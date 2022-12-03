@@ -15,7 +15,7 @@ def create_user_book(db: Session, book: BookCreate, user_id: int):
     db.refresh(db_book)
     return db_book
 
-def get_books_by_classification(db: Session, user_id: int, classification: str):
+def get_books_by_classification(db: Session, user_id: int, classification: int):
     return db.query(models.Book).filter(models.Book.owner_id == user_id, models.Book.classification == classification).all()
 
 def get_books_by_author(db: Session, user_id: int, author: str):

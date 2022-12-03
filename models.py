@@ -23,7 +23,7 @@ class Book(Base):
     author = Column(String, index=True)
     description = Column(String, index=True)
     genre = Column(String, index=True)
-    classification = Column(String, index=True)
+    classification = Column(Integer, index=True)
     pages = Column(Integer, index=True)
     owner_id = Column(Integer, ForeignKey("users.id"))
 

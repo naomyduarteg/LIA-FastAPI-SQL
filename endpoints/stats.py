@@ -25,3 +25,8 @@ def genre(user_id: int, entry: str, db: Session = Depends(get_db)):
 def class_order(user_id: int, db: Session = Depends(get_db)):
     class_count = crud_stats.get_class_count(db, user_id)
     return class_count
+
+@router.get("/classification/{top_books}", response_description="Choose n to see the n top books from all users")
+def top_books(n: int = 5, db: Session = Depends(get_db)):
+    top_books = crud_stats.get_top_n_books(db, n)
+    return top_books

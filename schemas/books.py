@@ -7,14 +7,14 @@ class BookBase(BaseModel): #creating
     description: str = Field(..., max_length=1000)
     genre: str = Field(...)
     pages: int = Field(..., gt=0)
-    classification: str
+    classification: int = Field(..., gt=0)
     
 
     @validator('classification')
     def classification_must_be(cls, classification):
-        classes = ['Excellent', 'Good', 'Bad', 'Very bad']
+        classes = [5, 4, 3, 2, 1]
         if classification not in classes:
-            raise ValueError(f'Classification must be in {classes}')
+            raise ValueError(f'Classification must be one of the grades {classes}')
         return classification
 
     @validator('genre')
@@ -42,4 +42,4 @@ class UpdateBook(BaseModel):
     description: Optional[str]
     genre: Optional[str]
     pages: Optional[int]
-    classification: Optional[str]
+    classification: Optional[int]
