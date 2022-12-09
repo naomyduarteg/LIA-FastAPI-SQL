@@ -1,113 +1,120 @@
 id,title,author,description,genre,classification,pages,owner_id
-1,Matadouro cinco,Kurt Vonnegut,Um livro que zomba da estupidez humana com um humor inigualável,Science Fiction,Excellent,288,1
-2,Cama de gato,Kurt Vonnegut,Mais um livro incrível que zomba da condição humana,Science Fiction,Excellent,280,1
-3,Cem anos de solidão,Gabriel Garcia Marquez,Um realismo fantástico lindo e cativante,Fiction Novel,Excellent,448,1
-4,Sobre os ossos dos mortos,Olga Tockarzuck,Uma história sobre nossa relação com a natureza e nosso lugar no mundo,Fiction Novel,Excellent,256,1
-5,Ensaio sobre a cegueira,José Saramago,É preciso que a humanidade deixe de ser cega,Fiction Novel,Excellent,312,1
-6,Duna,Frank Herbert,"Um livro que tinha tudo pra ser bom, mas que acabou sendo bem medíocre",Science Fiction,Bad,680,1
-7,A revolução dos bixos,George Orwell,"Uma fábula sobre poder, mas há que não se deixar enganar pela teoria da ferradura",Dystopian,Good,152,1
-8,1984,George Orwell,Uma distopia um pouco sem sentido,Dystopian,Good,416,1
-9,O guia do mochileiro das galáxias,Douglas Adams,Primeiro livro de uma trilogia de cinco cheia de humor irreverente,Science Fiction,Excellent,208,1
-10,O restaurante no fim do universo,Douglas Adams,Segundo livro de uma trilogia de cinco cheia de humor irreverente,Science Fiction,Excellent,240,1
-11,"A vida, o universo e tudo o mais",Douglas Adams,Terceiro livro de uma trilogia de cinco cheia de humor irreverente,Science Fiction,Excellent,224,1
-12,"Até mais, e obrigado pelos peixes",Douglas Adams,Quarto livro de uma trilogia de cinco cheia de humor irreverente,Science Fiction,Excellent,208,1
-13,Praticamente inofensiva,Douglas Adams,Quinto livro de uma trilogia de cinco cheia de humor irreverente,Science Fiction,Excellent,208,1
-14,Agência de investigações holísticas Dirk Gently,Douglas Adams,É uma história muito doida,Science Fiction,Good,240,1
-15,A longa e sombria hora do chá da alma,Douglas Adams,É uma história muito doida,Science Fiction,Good,224,1
-16,O hobbit,J R R Tolkien,O começo da fantasia mais épica de todos os tempos,"Fantasy, Adventure",Excellent,576,1
-17,O senhor dos anéis: a sociedade do anel,J R R Tolkien,O começo da saga do um anel,"Fantasy, Adventure",Excellent,576,1
-18,O senhor dos anéis: as duas torres,J R R Tolkien,A primeira grande batalha da saga do um anel,"Fantasy, Adventure",Excellent,464,1
-19,O senhor dos anéis: o retorno do rei,J R R Tolkien,O fim da saga do um anel,"Fantasy, Adventure",Excellent,528,1
-20,Eu sou a lenda,Richard Matheson,Um final tosco pra uma história fraca,Science Fiction,Bad,384,1
-21,O fim da infância,Arthur C Clarke,História interessante,Science Fiction,Good,300,1
-22,Encontro com Rama,Arthur C Clarke,Uma boa ficção científica que demanda bastante da nossa imaginação,Science Fiction,Good,294,1
-23,Ubik,Phillip K Dick,"O autor usou muitas drogas, certamente",Science Fiction,Bad,248,1
-24,Os próprios deuses,Isaac Asimov,Bem legalzinho,Science Fiction,Good,368,1
-25,O fim da eternidade,Isaac Asimov,Uma grande porcaria machista,Science Fiction,Bad,256,1
-26,Americanah,Chimamanda Ngozi Adichie,Excelente história sobre racismo,Fiction Novel,Excellent,520,1
-27,Hibisco roxo,Chimamanda Ngozi Adichie,Excelente história sobre questões culturais nigerianas,Fiction Novel,Excellent,328,1
-28,As sereias de Titã,Kurt Vonnegut,Legal,Science Fiction,Good,304,1
-29,Os despossuídos,Ursula K LeGuin,"História interessante, mas tediosa",Science Fiction,Good,384,1
-30,Caixa de pássaros,Josh Malerman,"Bem legal, li em um dia","Mystery, Suspense, Horror",Excellent,272,1
-31,Uma casa no fundo do lado,Josh Malerman,Fraco,"Mystery, Suspense, Horror",Bad,160,1
-32,Aniquilação,Jeff VanderMeer,"Livro um da trilogia comando sul, bem interessante","Mystery, Suspense, Horror",Good,200,1
-33,Autoridade,Jeff VanderMeer,"Livro dois da trilogia comando sul, bem interessante","Mystery, Suspense, Horror",Good,384,1
-34,Aceitação,Jeff VanderMeer,"Livro três da trilogia comando sul, bem interessante","Mystery, Suspense, Horror",Good,368,1
-35,O conto da Aia,Margareth Atwood,Uma distopia bem próxima do real,Fiction Novel,Good,368,1
-36,Testamentos,Margareth Atwood,Começo da distopia de o conto da aia,Fiction Novel,Good,448,1
-37,Memórias póstumas de Brás Cubas,Machado de Assis,Machado sempre excelente,Fiction Novel,Excellent,368,1
-38,O alienista,Machado de Assis,Machado sempre excelente,Fiction Novel,Excellent,104,1
-39,Dom casmurro,Machado de Assis,Bentinho surtado,Fiction Novel,Excellent,208,1
-40,Inspeção,Josh Malerman,"História interessante, mas que não funcionaria nada bem na realidade",Science Fiction,Good,416,1
-41,Malorie,Josh Malerman,A (ruim) continuação de Caixa de Pássaros que não deveria ter existido,"Mystery, Suspense, Horror",Bad,288,1
-42,Piano vermelho,Josh Malerman,Tão chato que nem lembro o que acontece,"Mystery, Suspense, Horror",Bad,320,1
-43,Garota exemplar,Gillian Flynn,"Muito bem escrito, suspense ótimo","Mystery, Suspense, Horror",Excellent,448,1
-44,Objetos cortantes,Gillian Flynn,Mais um excelente suspense/horror sobre particularidades na vida de mulheres,"Mystery, Suspense, Horror",Excellent,256,1
-45,O adulto,Gillian Flynn,Conto interessante,Fiction Novel,Good,64,1
-46,Boneco de neve,Jo Nesbo,Um bom suspense policial/horror norueguês,"Mystery, Suspense, Horror",Good,420,1
-47,O auto da compadecida,Ariano Suassuna,Suassuna e sua maneira de ver a cultura brasileira,Fiction Novel,Excellent,208,1
-48,O cortiço,Aluisio Azevedo,Uma grande crítica à formação da burguesia no Brasil,Fiction Novel,Excellent,368,1
-49,O pequeno príncipe,Antoine de Saint-Exupéry,Um dos livros mais chatos que já li na vida,"Fantasy, Adventure",Bad,96,1
-50,Iracema,José de Alencar,A romantização do índio brasileiro e da escrotice dos colonizadores,Fiction Novel,Bad,192,1
-51,Vidas secas,Graciliano Ramos,A tristeza de ser pobre no Brasil e a nossa amada Baleia,Fiction Novel,Excellent,176,1
-52,Capitães de areia,Jorge Amado,A vida de meninos pobres e abandonados no nordeste,Fiction Novel,Good,280,1
-53,Mitologia nórdica,Neil Gaiman,Uma maneira bem legal de contar a mitologia nórdica,"Fantasy, Adventure",Good,288,1
-54,O oceano no fim do caminho,Neil Gaiman,Historinha interessante,"Fantasy, Adventure",Good,208,1
-55,Magnus Chase: a espada do verão,Rick Riordan,Livro infantil que usa da mitologia nórdica,"Fantasy, Adventure",Bad,448,1
-56,Magnus Chase: o martelo de Thor,Rick Riordan,Livro infantil que usa da mitologia nórdica,"Fantasy, Adventure",Bad,400,1
-57,Magnus Chase: o navio dos mortos,Rick Riordan,Livro infantil que usa da mitologia nórdica,"Fantasy, Adventure",Bad,368,1
-58,História da sua vida e outros contos,Ted Chiang,Contos maravilhosos,Science Fiction,Excellent,368,1
-59,O problema dos três corpos,Cixin Liu,Primeiro livro de uma excelente trilogia de ficção científica pesada,Science Fiction,Excellent,320,1
-60,Romeu e Julieta,William Shakespeare,"Tedioso, uma história que não envelheceu bem",Fiction Novel,Very bad,248,1
-61,O retrato de Dorian Gray,Oscar Wilde,Boa discussão moral,Fiction Novel,Good,264,1
-62,O morro dos ventos uivantes,Emile Bronte,Interessante,Fiction Novel,Good,464,1
-63,Drácula,Bram Stoker,O surgimento de um personagem eterno,"Mystery, Suspense, Horror",Good,580,1
-64,As viagens de Gulliver,Jonathan Swift,Só lembro que era chato,"Fantasy, Adventure",Bad,320,1
-65,Harry Potter e a pedra filosofal,J K Rowling,"Começo da longa saga interessante, mas com muita coisa tosca","Fantasy, Adventure",Good,223,1
-66,Harry Potter e a câmara secreta,J K Rowling,"Livro 2 da longa saga interessante, mas com muita coisa tosca","Fantasy, Adventure",Good,224,1
-67,Harry Potter e o prisioneiro de Azkaban,J K Rowling,"Livro 3 da longa saga interessante, mas com muita coisa tosca","Fantasy, Adventure",Good,348,1
-68,Harry Potter e o cálice de fogo,J K Rowling,"Livro 4 da longa saga interessante, mas com muita coisa tosca","Fantasy, Adventure",Good,584,1
-69,Harry Potter e a ordem da fênix,J K Rowling,"Livro 5 da longa saga interessante, mas com muita coisa tosca","Fantasy, Adventure",Good,704,1
-70,Harry Potter e o enigma do príncipe,J K Rowling,"Livro 6 da longa saga interessante, mas com muita coisa tosca","Fantasy, Adventure",Good,472,1
-71,Harry Potter e as relíquias da morte,J K Rowling,"Livro 7 da longa saga interessante, mas com muita coisa tosca","Fantasy, Adventure",Good,592,1
-72,As crônicas de Nárnia,C S Lewis,O Tolkien criticou e ele estava correto,"Fantasy, Adventure",Good,752,1
-73,A mão esquerda da escuridão,Ursula K LeGuin,"Uma história chata de ler, mas que se bem escrita seria uma discussão legal",Science Fiction,Bad,304,1
-74,Blade runner,Phillip K Dick,Esse é menos surtado que os outros livros,Science Fiction,Bad,288,1
-75,O homem do castelo alto,Phillip K Dick,Surtado,Science Fiction,Bad,312,1
-76,O homem duplo,Phillip K Dick,Mais uma história surtada,Science Fiction,Bad,360,1
-77,Estamos todos completamente transtornados,Karen Joy Fowler,Bem interessante,Fiction Novel,Good,336,1
-78,Crônicas de uma morte anunciada,Gabriel Garcia Marquez,,Fiction Novel,Excellent,160,3
-79,Cem anos de solidão,Gabriel Garcia Marquez,,Fiction Novel,Excellent,432,3
-80,O guia do mochileiro das galáxias,Douglas Adams,,Science Fiction,Excellent,208,3
-81,Maze runner: correr ou morrer,James Dashner,,Science Fiction,Excellent,428,3
-82,O mal nosso de cada dia,Donald Ray Pollock,,"Mystery, Suspense, Horror",Excellent,304,3
-83,Caixa de pássaros,Josh Malerman,,"Mystery, Suspense, Horror",Excellent,272,3
-84,Tudo é rio,Carla Madeira,,Fiction Novel,Excellent,210,3
-85,1984,George Orwell,,Dystopian,Good,416,3
-86,O apanhador de sonhos,Stephen King,,"Mystery, Suspense, Horror",Good,656,3
-87,Cujo,Stephen King,,"Mystery, Suspense, Horror",Good,376,3
-88,A metade sombria,Stephen King,,"Mystery, Suspense, Horror",Good,464,3
-89,O cemitério,Stephen King,,"Mystery, Suspense, Horror",Bad,424,3
-90,A hora do lobisomen,Stephen King,,"Mystery, Suspense, Horror",Good,152,3
-91,Sob a redoma,Stephen King,,"Mystery, Suspense, Horror",Good,960,3
-92,Mr. Mercedes,Stephen King,,"Mystery, Suspense, Horror",Good,400,3
-93,A balada do black Tom,Victor LaValle,,"Mystery, Suspense, Horror",Good,146,3
-94,Eu sou a lenda,Richard Matheson,,Science Fiction,Good,384,3
-95,Eu estou pensando em acabar com tudo,Ian Reid,,"Mystery, Suspense, Horror",Good,224,3
-96,Tempo estranho,Joe Hill,,"Mystery, Suspense, Horror",Good,562,3
-97,Billy Summers,Stephen King,,"Mystery, Suspense, Horror",Good,472,3
-98,As ruínas,Scott Smith,,Fiction Novel,Good,368,3
-99,O chamado do cuco,Robert Galbraith,,Fiction Novel,Bad,448,3
-100,E não sobrou nenhum,Agatha Christie,,Fiction Novel,Good,400,3
-101,Nosferatu,Joe Hill,,"Mystery, Suspense, Horror",Good,608,3
-102,Mestre das chamas,Joe Hill,,"Mystery, Suspense, Horror",Good,592,3
-103,O menino que desenhava monstros,Keith Donohue,,"Mystery, Suspense, Horror",Good,256,3
-104,Crepúsculo,Stephenie Meyer,,"Fantasy, Adventure",Very bad,480,3
-105,Aniquilação,Jeff VanderMeer,,Science Fiction,Bad,171,3
-106,A menina que roubava livros,Markus Zusak,,Fiction Novel,Excellent,480,3
-107,Deus um delírio,Richard Dawkins,,Nonfiction,Good,528,3
-108,O maior espetáculo da Terra,Richard Dawkins,,Nonfiction,Good,472,3
-109,Malorie,Josh Malerman,,"Mystery, Suspense, Horror",Very bad,288,3
-110,Canção de ninar,Leila Slimani,,"Mystery, Suspense, Horror",Good,206,3
-111,Crepúsculo,Stephenie Meyer,Um dos piores livros já produzidos,"Fantasy, Adventure",Very bad,480,1
-112,A menina que roubava livros,Markus Zusak,Livro excelente sobre as desgraças do nazismo,Fiction Novel,Excellent,480,1
+1,Matadouro cinco,Kurt Vonnegut,Um livro que zomba da estupidez humana com um humor inigualável,Science Fiction,5,288,1
+2,Cama de gato,Kurt Vonnegut,Mais um livro incrível que zomba da condição humana,Science Fiction,5,280,1
+3,Cem anos de solidão,Gabriel Garcia Marquez,Um realismo fantástico lindo e cativante,Fiction Novel,5,448,1
+4,Cem anos de solidão,Gabriel Garcia Marquez,,Fiction Novel,5,448,2
+5,Sobre os ossos dos mortos,Olga Tockarzuck,Uma história sobre nossa relação com a natureza e nosso lugar no mundo,Fiction Novel,5,256,1
+6,Ensaio sobre a cegueira,José Saramago,É preciso que a humanidade deixe de ser cega,Fiction Novel,5,312,1
+7,Duna,Frank Herbert,"Um livro que tinha tudo pra ser bom, mas que acabou sendo bem medíocre",Science Fiction,3,680,1
+8,A revolução dos bixos,George Orwell,"Uma fábula sobre poder, mas há que não se deixar enganar pela teoria da ferradura",Dystopian,3,152,1
+9,1984,George Orwell,Uma distopia um pouco sem sentido,Dystopian,3,416,1
+10,O guia do mochileiro das galáxias,Douglas Adams,Primeiro livro de uma trilogia de cinco cheia de humor irreverente,Science Fiction,5,208,1
+11,O restaurante no fim do universo,Douglas Adams,Segundo livro de uma trilogia de cinco cheia de humor irreverente,Science Fiction,5,240,1
+12,"A vida, o universo e tudo o mais",Douglas Adams,Terceiro livro de uma trilogia de cinco cheia de humor irreverente,Science Fiction,5,224,1
+13,"Até mais, e obrigado pelos peixes",Douglas Adams,Quarto livro de uma trilogia de cinco cheia de humor irreverente,Science Fiction,5,208,1
+14,Praticamente inofensiva,Douglas Adams,Último livro de uma trilogia de cinco cheia de humor irreverente,Science Fiction,5,208,1
+15,Agência de investigações holísticas Dirk Gently,Douglas Adams,É uma história muito doida,Science Fiction,4,240,1
+16,A longa e sombria hora do chá da alma,Douglas Adams,É uma história muito doida,Science Fiction,4,224,1
+17,O hobbit,J R R Tolkien,O começo da fantasia mais épica de todos os tempos,"Fantasy, Adventure",5,336,1
+18,O senhor dos anéis: a sociedade do anel,J R R Tolkien,O começo da saga do um anel,"Fantasy, Adventure",5,576,1
+19,O senhor dos anéis: as duas torres,J R R Tolkien,A primeira grande batalha da saga do um anel,"Fantasy, Adventure",5,464,1
+20,O senhor dos anéis: o retorno do rei,J R R Tolkien,O fim da saga do um anel,"Fantasy, Adventure",5,528,1
+21,Eu sou a lenda,Richard Matheson,Um final tosco pra uma história fraca,Science Fiction,2,384,1
+22,O fim da infância,Arthur C Clarke,História interessante,Science Fiction,4,300,1
+23,Encontro com Rama,Arthur C Clarke,Uma boa ficção científica que demanda bastante da nossa imaginação,Science Fiction,4,294,1
+24,Ubik,Phillip K Dick,"O autor usou muitas drogas, certamente",Science Fiction,2,248,1
+25,Os próprios deuses,Isaac Asimov,Bem legalzinho,Science Fiction,4,368,1
+26,O fim da eternidade,Isaac Asimov,Uma grande porcaria machista,Science Fiction,1,256,1
+27,Americanah,Chimamanda Ngozi Adichie,Excelente história sobre racismo,Fiction Novel,5,520,1
+28,Hibisco roxo,Chimamanda Ngozi Adichie,Excelente história sobre questões culturais nigerianas,Fiction Novel,5,328,1
+29,As sereias de Titã,Kurt Vonnegut,"Legal, meio doido",Science Fiction,4,304,1
+30,Os despossuídos,Ursula K LeGuin,"História interessante, mas tediosa",Science Fiction,3,384,1
+31,Caixa de pássaros,Josh Malerman,"Bem legal, li em um dia","Mystery, Suspense, Horror",5,272,1
+32,Uma casa no fundo do lago,Josh Malerman,Fraco,"Mystery, Suspense, Horror",3,160,1
+33,Inspeção,Josh Malerman,"História interessante, mas que não funcionaria nada bem na realidade",Science Fiction,3,416,1
+34,Malorie,Josh Malerman,A (ruim) continuação de Caixa de Pássaros que não deveria ter existido,Science Fiction,2,288,1
+35,Piano vermelho,Josh Malerman,Tão chato que nem lembro o que acontece,"Mystery, Suspense, Horror",2,320,1
+36,Aniquilação,Jeff VanderMeer,"Livro um da trilogia comando sul, bem interessante","Mystery, Suspense, Horror",4,200,1
+37,Autoridade,Jeff VanderMeer,"Livro dois da trilogia comando sul, bem interessante","Mystery, Suspense, Horror",4,384,1
+38,Autoridade,Jeff VanderMeer,"Livro final da trilogia comando sul, bem interessante","Mystery, Suspense, Horror",4,368,1
+39,O conto da aia,Margareth Atwood,Uma distopia bem próxima do real,Fiction Novel,4,368,1
+40,O conto da aia,Margareth Atwood,Começo da distopia de o conto da aia,Fiction Novel,4,448,1
+41,Memórias póstumas de Brás Cubas,Machado de Assis,Machado sempre excelente,Fiction Novel,5,368,1
+42,O alienista,Machado de Assis,Machado sempre excelente,Fiction Novel,4,104,1
+43,Dom casmurro,Machado de Assis,Machado sempre excelente,Fiction Novel,5,208,1
+44,Garota exemplar,Gillian Flynn,"Muito bem escrito, suspense ótimo","Mystery, Suspense, Horror",4,448,1
+45,Objetos cortantes,Gillian Flynn,Mais um excelente suspense/horror sobre particularidades na vida de mulheres,"Mystery, Suspense, Horror",4,256,1
+46,O adulto,Gillian Flynn,Conto interessante,"Mystery, Suspense, Horror",3,64,1
+47,Boneco de neve,Jo Nesbo,Um bom suspense policial/horror norueguês,"Mystery, Suspense, Horror",4,420,1
+48,O auto da compadecida,Ariano Suassuna,Suassuna e sua maneira de ver a cultura brasileira,Fiction Novel,5,208,1
+49,O cortiço,Aluisio Azevedo,Uma grande crítica à formação da burguesia no Brasil,Fiction Novel,5,368,1
+50,O pequeno príncipe,Antoine de Saint-Exupéry,Um dos livros mais chatos que já li na vida,"Fantasy, Adventure",1,96,1
+51,Iracema,José de Alencar,A romantização do índio brasileiro e da escrotice dos colonizadores,Fiction Novel,2,192,1
+52,Vidas secas,Graciliano Ramos,A tristeza de ser pobre no Brasil e a amada Baleia,Fiction Novel,5,176,1
+53,Capitães de areia,Jorge Amado,A vida de meninos pobres e abandonados no nordeste,Fiction Novel,4,280,1
+54,Mitologia nórdica,Neil Gaiman,Uma maneira bem legal de contar a mitologia nórdica,"Fantasy, Adventure",4,288,1
+55,O oceano no fim do caminho,Neil Gaiman,Historinha legal,"Fantasy, Adventure",3,208,1
+56,Magnus Chase: a espada do verão,Rick Riordan,Livro infantil que usa da mitologia nórdica,"Fantasy, Adventure",3,448,1
+57,Magnus Chase: o martelo de Thor,Rick Riordan,Livro infantil que usa da mitologia nórdica,"Fantasy, Adventure",3,400,1
+58,Magnus Chase: o navio dos mortos,Rick Riordan,Livro infantil que usa da mitologia nórdica,"Fantasy, Adventure",3,368,1
+59,História da sua vida e outros contos,Ted Chiang,Contos maravilhosos,Science Fiction,5,368,1
+60,O problema dos três corpos,Cixin Liu,Primeiro livro de uma excelente trilogia de ficção científica pesada,Science Fiction,5,320,1
+61,Romeu e Julieta,William Shakespeare,"Tedioso, uma história que não envelheceu bem",Fiction Novel,1,248,1
+62,O guia do mochileiro das galáxias,Douglas Adams,,Science Fiction,5,208,2
+63,O retrato de Dorian Gray,Oscar Wilde,Boa discussão moral,Fiction Novel,4,264,1
+64,O morro dos ventos uivantes,Emile Bronte,Interessante,Fiction Novel,3,464,1
+65,Drácula,Bram Stoker,O surgimento de um personagem eterno,"Mystery, Suspense, Horror",4,580,1
+66,As viagens de Gulliver,Jonathan Swift,Só lembro que era chato,"Fantasy, Adventure",1,320,1
+67,Harry Potter e a pedra filosofal,J K Rowling,,"Fantasy, Adventure",4,223,1
+68,Harry Potter e a câmara secreta,J K Rowling,,"Fantasy, Adventure",4,224,1
+69,Harry Potter e o prisioneiro de Azkaban,J K Rowling,,"Fantasy, Adventure",4,348,1
+70,Harry Potter e o cálice de fogo,J K Rowling,,"Fantasy, Adventure",4,584,1
+71,Harry Potter e a ordem da fênix,J K Rowling,,"Fantasy, Adventure",4,704,1
+72,Harry Potter e o enigma do príncipe,J K Rowling,,"Fantasy, Adventure",4,472,1
+73,Harry Potter e as relíquias da morte,J K Rowling,,"Fantasy, Adventure",4,592,1
+74,As crônicas de Nárnia,C S Lewis,,"Fantasy, Adventure",3,752,1
+75,A mão esquerda da escuridão,Ursula K LeGuin,"Uma história chata de ler, mas que se bem escrita seria uma discussão legal",Science Fiction,3,304,1
+76,Blade runner,Phillip K Dick,,Science Fiction,2,288,1
+77,Estamos todos completamente transtornados,Karen Joy Fowler,,Fiction Novel,3,336,1
+78,Crônicas de uma morte anunciada,Gabriel Garcia Marquez,,Fiction Novel,5,160,2
+79,Maze runner: correr ou morrer,James Dashner,,Science Fiction,5,428,2
+80,Maze runner: correr ou morrer,James Dashner,,Science Fiction,4,428,1
+82,Caixa de pássaros,Josh Malerman,,"Mystery, Suspense, Horror",5,272,2
+83,O mal nosso de cada dia,Donald Ray Pollock,,"Mystery, Suspense, Horror",5,304,2
+84,Tudo é rio,Carla Madeira,,Fiction Novel,5,210,2
+85,1984,George Orwell,,Dystopian,3,416,2
+86,O apanhador de sonhos,Stephen King,,"Mystery, Suspense, Horror",4,656,2
+87,Cujo,Stephen King,,"Mystery, Suspense, Horror",4,376,2
+88,A metade sombria,Stephen King,,"Mystery, Suspense, Horror",4,464,2
+89,O cemitério,Stephen King,,"Mystery, Suspense, Horror",2,424,2
+90,A hora do lobisomen,Stephen King,,"Mystery, Suspense, Horror",3,152,2
+91,Sob a redoma,Stephen King,,"Mystery, Suspense, Horror",4,960,2
+92,Mr. Mercedes,Stephen King,,"Mystery, Suspense, Horror",3,400,2
+93,Billy Summers,Stephen King,,"Mystery, Suspense, Horror",3,472,2
+94,A balada do black Tom,Victor LaValle,,"Mystery, Suspense, Horror",3,146,2
+95,Eu sou a lenda,Richard Matheson,,Science Fiction,3,384,2
+96,Eu estou pensando em acabar com tudo,Ian Reid,,"Mystery, Suspense, Horror",4,224,2
+97,Tempo estranho,Joe Hill,,"Mystery, Suspense, Horror",3,562,2
+98,As ruínas,Scott Smith,,Fiction Novel,4,368,2
+99,O chamado do cuco,Robert Galbraith,,Fiction Novel,2,448,2
+100,E não sobrou nenhum,Agatha Christie,,Fiction Novel,3,400,2
+101,Nosferatu,Joe Hill,,"Mystery, Suspense, Horror",4,608,2
+102,Mestre das chamas,Joe Hill,,"Mystery, Suspense, Horror",4,592,2
+103,O menino que desenhava monstros,Keith Donohue,,"Mystery, Suspense, Horror",4,256,2
+104,Crepúsculo,Stephenie Meyer,,"Fantasy, Adventure",1,480,2
+105,Crepúsculo,Stephenie Meyer,,"Fantasy, Adventure",1,480,1
+106,A menina que roubava livros,Markus Zusak,,Fiction Novel,4,480,1
+107,A menina que roubava livros,Markus Zusak,,Fiction Novel,5,480,2
+108,Aniquilação,Jeff VanderMeer,,Science Fiction,2,171,2
+109,Deus um delírio,Richard Dawkins,,Nonfiction,4,528,2
+110,O maior espetáculo da Terra,Richard Dawkins,,Nonfiction,4,472,2
+111,Malorie,Josh Malerman,,"Mystery, Suspense, Horror",1,288,2
+112,Canção de ninar,Leila Slimani,,"Mystery, Suspense, Horror",3,206,2
+113,Canção de ninar,Leila Slimani,,"Mystery, Suspense, Horror",3,206,1
+114,Harry Potter e a pedra filosofal,J K Rowling,,"Fantasy, Adventure",4,223,2
+115,Harry Potter e a câmara secreta,J K Rowling,,"Fantasy, Adventure",4,224,2
+116,Harry Potter e o prisioneiro de Azkaban,J K Rowling,,"Fantasy, Adventure",4,348,2
+117,Harry Potter e o cálice de fogo,J K Rowling,,"Fantasy, Adventure",3,584,2
+118,Harry Potter e a ordem da fênix,J K Rowling,,"Fantasy, Adventure",4,704,2
+119,Harry Potter e o enigma do príncipe,J K Rowling,,"Fantasy, Adventure",3,472,2
+120,Harry Potter e as relíquias da morte,J K Rowling,,"Fantasy, Adventure",4,592,2

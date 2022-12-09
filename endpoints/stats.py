@@ -30,3 +30,8 @@ def class_order(user_id: int, db: Session = Depends(get_db)):
 def top_books(n: int = 5, db: Session = Depends(get_db)):
     top_books = crud_stats.get_top_n_books(db, n)
     return top_books
+
+@router.get("/{most_read_all_users}", response_description="Choose n to see the n most read books, the numbers of users who read them and their mean classification")
+def most_read(n: int = 5, db: Session = Depends(get_db)):
+    most_read = crud_stats.most_read_books_and_mean_class(db, n)
+    return most_read
