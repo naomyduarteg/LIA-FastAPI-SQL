@@ -118,3 +118,50 @@ id,title,author,description,genre,classification,pages,owner_id
 118,Harry Potter e a ordem da fênix,J K Rowling,,"Fantasy, Adventure",4,704,2
 119,Harry Potter e o enigma do príncipe,J K Rowling,,"Fantasy, Adventure",3,472,2
 120,Harry Potter e as relíquias da morte,J K Rowling,,"Fantasy, Adventure",4,592,2
+121,Desespero,Stephen King,,"Mystery, Suspense, Horror",5,688,3
+122,"A vida, o universo e tudo o mais",Douglas Adams,,Science Fiction,3,160,3
+123,O restaurante no fim do universo,Douglas Adams,,Science Fiction,3,174,3
+124,Praticamente inofensiva,Douglas Adams,,Science Fiction,3,191,3
+125,"Até mais, e obrigado pelos peixes",Douglas Adams,,Science Fiction,4,142,3
+126,O guia do mochileiro das galáxias,Douglas Adams,,Science Fiction,3,160,3
+127,Em busca de watership down,Richard Adams,,"Fantasy, Adventure",4,464,3
+128,Capitães da areia,Jorge Amado,,Fiction Novel,4,296,3
+129,Trilogia da Fundação,Isaac Asimov,,Science Fiction,5,880,3
+130,Trilogia da Fundação,Isaac Asimov,,Science Fiction,4,880,1
+131,O fim da eternidade,Isaac Asimov,,Science Fiction,5,256,3
+132,A autoestrada,Richard Bachman,,"Mystery, Suspense, Horror",3,304,3
+133,Os justiceiros,Richard Bachman,,"Mystery, Suspense, Horror",3,240,3
+134,Blaze,Richard Bachman,,"Mystery, Suspense, Horror",4,340,3
+135,Os livros de Bachman,Richard Bachman,,"Mystery, Suspense, Horror",3,725,3
+136,A maldição do cigano,Richard Bachman,,"Mystery, Suspense, Horror",3,209,3
+137,O concorrente,Richard Bachman,,"Mystery, Suspense, Horror",3,311,3
+138,Meu amigo Dahmer,Derf Backderf,,Graphic Novel,4,288,3
+139,Os pássaros,Frank Baker,,"Mystery, Suspense, Horror",3,304,3
+140,Candyman,Clive Baker,,"Mystery, Suspense, Horror",3,112,3
+141,O exorcista,William Peter Blatty,,"Mystery, Suspense, Horror",5,336,3
+142,Colega de quarto,Victor Bonini,,"Mystery, Suspense, Horror",3,299,3
+143,O planeta dos macacos,Pierre Boulle,,Science Fiction,3,216,3
+144,Algo sinistro vem por aí,Ray Bradbury,,"Mystery, Suspense, Horror",4,266,3
+145,Fahrenheit 451,Ray Bradbury,,Dystopian,4,215,3
+146,As crônicas marcianas,Ray Bradbury,,Science Fiction,4,296,3
+147,A parábola do semeador,Octavia Butler,,Science Fiction,4,432,3
+148,A parábola dos talentos,Octavia Butler,,Science Fiction,4,560,3
+149,Kindred: laços de sangue,Octavia Butler,,Science Fiction,4,432,3
+150,Filhos de sangue e outras histórias,Octavia Butler,,Science Fiction,4,244,3
+151,Assassinato no campo de golfe,Agatha Christie,,"Mystery, Suspense, Horror",3,296,3
+152,N ou M?,Agatha Christie,,"Mystery, Suspense, Horror",3,144,3
+153,Poirot investiga,Agatha Christie,,"Mystery, Suspense, Horror",2,174,3
+154,O adversário secreto,Agatha Christie,,"Mystery, Suspense, Horror",3,384,3
+155,O misterioso caso de Styles,Agatha Christie,,"Mystery, Suspense, Horror",2,202,3
+156,2001: uma odisseia no espaço,Arthur Clarke,,Science Fiction,5,336,3
+157,O fim da infância,Arthur Clarke,,Science Fiction,4,320,3
+158,Encontro com Rama,Arthur Clarke,,Science Fiction,3,288,3
+159,Jogador número um,Ernest Cline,,Science Fiction,4,464,3
+160,Jogador número dois,Ernest Cline,,Science Fiction,3,416,3
+161,Não conte a ninguém,Harlan Coben,,"Mystery, Suspense, Horror",3,256,3
+162,Não conte a ninguém,Harlan Coben,,"Mystery, Suspense, Horror",2,256,1
+163,Não fale com estranhos,Harlan Coben,,"Mystery, Suspense, Horror",3,301,3
+164,A grande ilusão,Harlan Coben,,"Mystery, Suspense, Horror",4,304,3
+165,Matéria escura,Blake Crouch,,Science Fiction,4,358,3
+166,Recursão,Blake Crouch,,Science Fiction,4,320,3
+167,Recursão,Blake Crouch,,Science Fiction,4,320,1
