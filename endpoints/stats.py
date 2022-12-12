@@ -1,6 +1,6 @@
 from fastapi import Depends, APIRouter
 from sqlalchemy.orm import Session
-from crud import crud_stats
+from crud import crud_stats, crud_recommendation
 from endpoints.users import get_db
 
 router = APIRouter(prefix="/statistics",
@@ -35,3 +35,8 @@ def top_books(n: int = 5, db: Session = Depends(get_db)):
 def most_read(n: int = 5, db: Session = Depends(get_db)):
     most_read = crud_stats.most_read_books_and_mean_class(db, n)
     return most_read
+
+@router.get("/recommendation/get_recommendations", response_description="")
+def get_recomm(book_id: int, n_rec: int, owner_id: int):
+    get_recommendation = crud_recommendation.f_recommend(book_id, n_rec, owner_id)
+    return get_recommendation
