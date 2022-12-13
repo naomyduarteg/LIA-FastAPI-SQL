@@ -36,7 +36,7 @@ def most_read(n: int = 5, db: Session = Depends(get_db)):
     most_read = crud_stats.most_read_books_and_mean_class(db, n)
     return most_read
 
-@router.get("/recommendation/get_recommendations", response_description="")
+@router.get("/recommendation/get_recommendations", response_description="Get book recommendations by choosing a book from your list")
 def get_recomm(book_id: int, owner_id: int):
     get_recommendation = crud_recommendation.f_recommend(book_id, owner_id)
     return get_recommendation

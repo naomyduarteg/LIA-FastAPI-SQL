@@ -23,6 +23,7 @@ def f_recommend(book_id, owner_id):
 
     df_recommendations = recommend(df.index[book_id], owner_id, df)
     df_seila= df_copy.loc[df_copy['id'].isin(df_recommendations.index.values), ['title']]
+    df_seila.drop_duplicates(inplace=True)
     list_books = df_seila.to_dict(orient='list')
     return list_books
 

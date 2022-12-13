@@ -43,6 +43,6 @@ def delete_user_book(db: Session, user_id: int, book_id: int):
     db.commit()
 
     if book_to_delete == 1:
-        return f"Book from user {user_id} with id {book_id} deleted sucessfully"
+        return f"Book with id {book_id} from user {user_id} deleted sucessfully"
     
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"User or book id must be wrong.")
