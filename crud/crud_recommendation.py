@@ -5,7 +5,11 @@ from numpy import dot
 from numpy.linalg import norm 
 
 
-def f_recommend(book_id, n_rec, owner_id):
+def f_recommend(book_id, owner_id):
+    '''
+    Gets the csv file, converts to pandas dataframe, normalizes and one hot encodes columns, 
+    adjusts dataframe to recommend books using cosine similarity as metric, then returns dict of the books recommended
+    '''
     df = pd.read_csv(r'd:\naomy\LIA-FastAPI-MySQL\data\data.csv')
     df_copy = df.copy()
     df.rename(columns={'id':'book_id'},inplace=True)
@@ -17,19 +21,14 @@ def f_recommend(book_id, n_rec, owner_id):
     df.drop(columns = cols, inplace = True)
     df.set_index('book_id', inplace = True)
 
-    df_recommendations = recommend(df.index[book_id], n_rec, owner_id, df)
+    df_recommendations = recommend(df.index[book_id], owner_id, df)
     df_seila= df_copy.loc[df_copy['id'].isin(df_recommendations.index.values), ['title']]
-    return df_seila
+    list_books = df_seila.to_dict(orient='list')
+    return list_books
 
 def normalize(data):
     '''
-    Normalize input data to be between 0 and 1
-    
-    params:
-        data: values you want to normalize
-    
-    returns:
-        The input data normalized between 0 and 1
+    Gets dataframe and normalizes input data to be between 0 and 1
     '''
     min_val = min(data)
     if min_val < 0:
@@ -39,15 +38,8 @@ def normalize(data):
 
 def ohe(df, enc_col):
     '''
-    This function will one hot encode the specified column and add it back
+    One hot encodes specified columns and adds them back
     onto the input dataframe
-    
-    params:
-        df (DataFrame) : The dataframe you wish for the results to be appended to
-        enc_col (String) : The column you want to OHE
-    
-    returns:
-        The OHE columns added onto the input dataframe
     '''
     
     ohe_df = pd.get_dummies(df[enc_col])
@@ -56,23 +48,21 @@ def ohe(df, enc_col):
 
 def cosine_sim(v1,v2):
     '''
-    This function will calculate the cosine similarity between two vectors
+    Calculates the cosine similarity between two vectors
     '''
     return dot(v1,v2)/(norm(v1)*norm(v2))
 
-def recommend(book_id, n_rec, owner_id, df):
+def recommend(book_id, owner_id, df):
     """
-    df (dataframe): The dataframe
-    song_id (string): Representing the song name
-    n_rec (int): amount of rec user wants
+    Calls the cosine similarity function to calculate similarities and returns the 10 
+    most similar books, excluding the ones read by the user
     """
-
     
     # calculate similarity of input book_id vector and all other vectors
     inputVec = df.loc[book_id].values
     df['sim']= df.apply(lambda x: cosine_sim(inputVec,x.values), axis=1)
     
-    df_rec = df.nlargest(columns='sim',n=n_rec)
+    df_rec = df.nlargest(10, columns='sim')
     df_final = df_rec.loc[df['owner_id'] != owner_id]
-    # returns top n user specified books that the user didnt listed already
+    # returns top 10 similar books that the user didnt listed already
     return df_final

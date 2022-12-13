@@ -37,6 +37,6 @@ def most_read(n: int = 5, db: Session = Depends(get_db)):
     return most_read
 
 @router.get("/recommendation/get_recommendations", response_description="")
-def get_recomm(book_id: int, n_rec: int, owner_id: int):
-    get_recommendation = crud_recommendation.f_recommend(book_id, n_rec, owner_id)
+def get_recomm(book_id: int, owner_id: int):
+    get_recommendation = crud_recommendation.f_recommend(book_id, owner_id)
     return get_recommendation
