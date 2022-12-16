@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from numpy import dot
 from numpy.linalg import norm 
+from fastapi import HTTPException, status
 
 
 def f_recommend(book_id, owner_id):
@@ -17,16 +18,16 @@ def f_recommend(book_id, owner_id):
     df['book_rating_norm'] = normalize(df['classification'].values)
     df = ohe(df = df, enc_col = 'genre')
     df = ohe(df = df, enc_col = 'author')
-    cols = ['pages', 'genre', 'description', 'title', 'author']
+    cols = ['pages', 'genre', 'description', 'title', 'author','classification']
     df.drop(columns = cols, inplace = True)
     df.set_index('book_id', inplace = True)
 
     df_recommendations = recommend(df.index[book_id], owner_id, df)
-    df_seila= df_copy.loc[df_copy['id'].isin(df_recommendations.index.values), ['title']]
+    df_seila= df_copy.loc[df_copy['id'].isin(df_recommendations.index.values), ['title']]#returns dataframe with the titles associated to the book ids
     df_seila.drop_duplicates(inplace=True)
     list_books = df_seila.to_dict(orient='list')
     return list_books
-
+    
 def normalize(data):
     '''
     Gets dataframe and normalizes input data to be between 0 and 1
@@ -55,15 +56,16 @@ def cosine_sim(v1,v2):
 
 def recommend(book_id, owner_id, df):
     """
-    Calls the cosine similarity function to calculate similarities and returns the 10 
-    most similar books, excluding the ones read by the user
+    Content based recommendations.
+    Calls the cosine similarity function to calculate similarities and returns the
+    most similar books, excluding the ones listed by the user
     """
-    
+    book_id = book_id - 1 #because it starts from zero, while the ids in the database start from 1
     # calculate similarity of input book_id vector and all other vectors
     inputVec = df.loc[book_id].values
     df['sim']= df.apply(lambda x: cosine_sim(inputVec,x.values), axis=1)
     
     df_rec = df.nlargest(10, columns='sim')
-    df_final = df_rec.loc[df['owner_id'] != owner_id]
-    # returns top 10 similar books that the user didnt listed already
+    df_final = df_rec.loc[df['owner_id'] != owner_id]#excludes books already listed by the user
+    # returns top 10 similar books that the user didnt list already
     return df_final
