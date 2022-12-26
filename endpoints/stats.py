@@ -31,12 +31,13 @@ def top_books(n: int = 5, db: Session = Depends(get_db)):
     top_books = crud_stats.get_top_n_books(db, n)
     return top_books
 
-@router.get("/{most_read_all_users}", response_description="Choose n to see the n most read books, the numbers of users who read them and their mean classification")
+@router.get("/{most_read_all_users}", response_description="Choose n to see the n most read books, the number of users who read them and their average classification")
 def most_read(n: int = 5, db: Session = Depends(get_db)):
     most_read = crud_stats.most_read_books_and_mean_class(db, n)
     return most_read
 
 @router.get("/similar_books/get_suggestions", response_description="Choose a book by its id to get suggestions of similar ones in the database")
-def get_similar(book_id: int, owner_id: int):
+def get_similar(book_id: int, owner_id: int, db: Session = Depends(get_db)):
+    get_title = crud_stats.get_book_title(db, book_id)
     get_suggestions = crud_recommendation.f_recommend(book_id, owner_id)
-    return get_suggestions
+    return get_title, get_suggestions

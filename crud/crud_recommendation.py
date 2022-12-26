@@ -67,5 +67,5 @@ def recommend(book_id, owner_id, df):
     
     df_rec = df.nlargest(10, columns='sim')
     df_final = df_rec.loc[df['owner_id'] != owner_id]#excludes books already listed by the user
-    # returns top 10 similar books that the user didnt list already
+    # returns up to 10 similar books that the user didnt list already
     return df_final

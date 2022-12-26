@@ -51,9 +51,16 @@ def get_top_n_books(db: Session, n: int = 5):
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Not found!")
 
 def most_read_books_and_mean_class(db: Session, n: int=5):
-    mrbamc = db.query(models.Book.title, func.count(models.Book.title), func.avg(models.Book.classification)).group_by(models.Book.title).order_by(func.count(models.Book.title).desc()).limit(n).all()
-    #SELECT title, COUNT(title), AVG(classification) from Book GROUP BY title ORDER BY COUNT(title) DESC LIMIT n
+    mrbamc = db.query(models.Book.title, func.count(models.Book.title), func.round(func.avg(models.Book.classification),2)).group_by(models.Book.title).order_by(func.count(models.Book.title).desc()).limit(n).all()
+    #SELECT title, COUNT(title), ROUND(AVG(classification),2) from Book GROUP BY title ORDER BY COUNT(title) DESC LIMIT n
     if mrbamc:
-        return f"The {n} most read books, the numbers of users who read them and their respective mean classification: {mrbamc}"
+        return f"The {n} most read books, the number of users who read them and their respective average classification: {mrbamc}"
+    
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Not found!")
+
+def get_book_title(db: Session, book_id: int):
+    title = db.query(models.Book.title).filter(models.Book.id == book_id).one()
+    if title:
+        return f"You choose the book {title}. Here are the most similar ones to it:"
     
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Not found!")
