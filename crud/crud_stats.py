@@ -62,5 +62,5 @@ def get_book_title(db: Session, book_id: int):
     title = db.query(models.Book.title).filter(models.Book.id == book_id).one()
     if title:
         return f"You choose the book {title}. Here are the most similar ones to it:"
-    
+
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Not found!")
