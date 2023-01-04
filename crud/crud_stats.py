@@ -61,6 +61,6 @@ def most_read_books_and_mean_class(db: Session, n: int=5):
 def get_book_title(db: Session, book_id: int):
     title = db.query(models.Book.title).filter(models.Book.id == book_id).one()
     if title:
-        return f"You choose the book {title}. Here are the most similar ones to it:"
+        return f"You choose the book {title}. Here are the most similar ones to it that you may not have read:"
 
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Not found!")

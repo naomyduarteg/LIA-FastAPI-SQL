@@ -3,8 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-#Jupyter files will be ignored as they are being used to test models
-.ipynb
 # C extensions
 *.so
 
