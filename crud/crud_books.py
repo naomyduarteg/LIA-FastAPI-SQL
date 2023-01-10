@@ -19,10 +19,12 @@ def get_books_by_classification(db: Session, user_id: int, classification: int):
     return db.query(models.Book).filter(models.Book.owner_id == user_id, models.Book.classification == classification).all()
 
 def get_books_by_author(db: Session, user_id: int, author: str):
-    return db.query(models.Book).filter(models.Book.owner_id == user_id, models.Book.author == author).all()
+    return db.query(models.Book).filter(models.Book.owner_id == user_id, models.Book.author.like("%" + author + "%")).all()
+    #SELECT BOOKS FROM BOOK WHERE OWNER_ID = USER_ID AND AUTHOR LIKE "%AUTHOR%"
 
 def get_books_by_genre(db: Session, user_id:int, genre: str):
     return db.query(models.Book).filter(models.Book.owner_id == user_id, models.Book.genre == genre).all()
+    #SELECT BOOKS FROM BOOK WHERE OWNER_ID = USER_ID AND GENRE = GENRE
 
 def update_book(db: Session, user_id: int, book_id: int, book: UpdateBook):
     book = {k: v for k, v in book.dict().items() if v is not None}

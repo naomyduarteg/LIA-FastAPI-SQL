@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 from numpy import dot
 from numpy.linalg import norm 
-from fastapi import HTTPException, status
 
 
 def f_recommend(book_id, owner_id):
