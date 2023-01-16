@@ -21,7 +21,7 @@ def genre(user_id: int, entry: str, db: Session = Depends(get_db)):
     genre = crud_stats.get_most_least_genre(db, user_id, entry)
     return genre
 
-@router.get("/classification/", response_description="Ordered classifications")
+@router.get("/classification/", response_description="Ordered classifications for each user")
 def class_order(user_id: int, db: Session = Depends(get_db)):
     class_count = crud_stats.get_class_count(db, user_id)
     return class_count

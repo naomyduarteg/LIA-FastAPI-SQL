@@ -16,16 +16,28 @@ def create_user_book(db: Session, book: BookCreate, user_id: int):
     return db_book
 
 def get_books_by_classification(db: Session, user_id: int, classification: int):
-    return db.query(models.Book).filter(models.Book.owner_id == user_id, models.Book.classification == classification).all()
+    books_class = db.query(models.Book).filter(models.Book.owner_id == user_id, models.Book.classification == classification).all()
+    if books_class:
+        return books_class
+
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Classification/user_id incorrect") 
 
 def get_books_by_author(db: Session, user_id: int, author: str):
-    return db.query(models.Book).filter(models.Book.owner_id == user_id, models.Book.author.like("%" + author + "%")).all()
+    books_author = db.query(models.Book).filter(models.Book.owner_id == user_id, models.Book.author.like("%" + author + "%")).all()
     #SELECT BOOKS FROM BOOK WHERE OWNER_ID = USER_ID AND AUTHOR LIKE "%AUTHOR%"
+    if books_author:
+        return books_author
+
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Author/user_id not found!") 
 
 def get_books_by_genre(db: Session, user_id:int, genre: str):
-    return db.query(models.Book).filter(models.Book.owner_id == user_id, models.Book.genre == genre).all()
+    books_genre = db.query(models.Book).filter(models.Book.owner_id == user_id, models.Book.genre == genre).all()
     #SELECT BOOKS FROM BOOK WHERE OWNER_ID = USER_ID AND GENRE = GENRE
+    if books_genre:
+        return books_genre
 
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Genre/user_id not found!") 
+    
 def update_book(db: Session, user_id: int, book_id: int, book: UpdateBook):
     book = {k: v for k, v in book.dict().items() if v is not None}
     if len(book) >= 1:

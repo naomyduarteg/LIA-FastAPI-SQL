@@ -10,7 +10,7 @@ def get_total_pages(db: Session, user_id: int):
     if total_pages:
         return f"You have read {total_pages} pages so far! Keep on reading!"
 
-    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Not found!")
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"User with id {user_id} not found!")
 
 def get_mode_author(db: Session, user_id: int):
     mode_author = db.query(models.Book.author).filter(models.Book.owner_id == user_id).group_by(models.Book.author).order_by(func.count().desc()).limit(1).scalar()
@@ -40,27 +40,19 @@ def get_class_count(db: Session, user_id: int):
     if class_count:
         return class_count
 
-    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Not found!")
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"User with id {user_id} not found!")
 
 def get_top_n_books(db: Session, n: int = 5):
     top_books = db.query(models.Book.title).group_by(models.Book.title).order_by(func.sum(models.Book.classification).desc()).limit(n).all()
     #SELECT title FROM Book GROUP BY title ORDER BY SUM(classification) DESC LIMIT n
-    if top_books:
-        return f"The {n} top rated books from all users are {top_books}"
-    
-    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Not found!")
+    return f"The {n} top rated books from all users are {top_books}"
+
 
 def most_read_books_and_mean_class(db: Session, n: int=5):
     mrbamc = db.query(models.Book.title, func.count(models.Book.title), func.round(func.avg(models.Book.classification),2)).group_by(models.Book.title).order_by(func.count(models.Book.title).desc()).limit(n).all()
     #SELECT title, COUNT(title), ROUND(AVG(classification),2) from Book GROUP BY title ORDER BY COUNT(title) DESC LIMIT n
-    if mrbamc:
-        return f"The {n} most read books, the number of users who read them and their respective average classification: {mrbamc}"
-    
-    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Not found!")
+    return f"The {n} most read books, the number of users who read them and their average classification, respectively: {mrbamc}"
 
 def get_book_title(db: Session, book_id: int):
     title = db.query(models.Book.title).filter(models.Book.id == book_id).one()
-    if title:
-        return f"You choose the book {title}. Here are the most similar ones to it that you may not have read:"
-
-    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Not found!")
+    return f"You choose the book {title}. Here are the most similar ones to it:"

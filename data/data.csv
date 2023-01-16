@@ -235,7 +235,7 @@ id,title,author,description,genre,classification,pages,owner_id
 236,Ilha do medo,Dennis Lehane,,Fiction Novel,5,344,3
 237,Angústia,Graciliano Ramos,Arrastado demais,Fiction Novel,3,368,1
 238,O impulso,Ashley Audrain,Boa história. Li em dois dias.,Fiction Novel,4,328,1
-239,Expiração,Ted Chiang,Maravilhoso,Science Fiction,5,416,1
+239,Expiração,Ted Chiang,Bom,Science Fiction,4,416,1
 240,Guerra do Velho,John Scalzi,,Science Fiction,5,368,4
 241,Guerra do Velho,John Scalzi,,Science Fiction,3,368,1
 242,"Eu, robô",Isaac Asimov,,Science Fiction,5,320,4
@@ -342,3 +342,59 @@ id,title,author,description,genre,classification,pages,owner_id
 343,Uma história desagradável,Fyodor Dostoevsky,,Fiction Novel,5,112,5
 344,Um pequeno herói,Fyodor Dostoevsky,,Fiction Novel,5,88,5
 345,Memórias do subsolo,Fyodor Dostoevsky,,Fiction Novel,5,152,5
+346,Baudolino,Umberto Eco,,Fiction Novel,5,527,5
+347,O fascismo eterno,Umberto Eco,,Nonfiction,4,64,5
+348,Migração e intolerância,Umberto Eco,,Nonfiction,3,96,5
+349,O lugar,Annie Ernaux,,Fiction Novel,4,72,5
+350,O acontecimento,Annie Ernaux,,Nonfiction,4,80,5
+351,A vergonha,Annie Ernaux,,Fiction Novel,4,88,5
+352,Os anos,Annie Ernaux,,Nonfiction,5,232,5
+353,O jovem,Annie Ernaux,,Nonfiction,4,56,5
+354,O grande Gatsby,F. Scott Fitzgerald,,Fiction Novel,5,256,5
+355,O curioso caso de Benjamin Button,F. Scott Fitzgerald,,Fiction Novel,3,56,5
+356,Memórias de minhas putas tristes,Gabriel Garcia Marquez,,Fiction Novel,3,127,5
+357,Cem anos de solidão,Gabriel Garcia Marquez,,Fiction Novel,5,448,5
+358,Relato de um náufrago,Gabriel Garcia Marquez,,Fiction Novel,5,144,5
+359,O velho e o mar,Ernest Hemingway,,Fiction Novel,5,124,5
+360,Paris é uma festa,Ernest Hemingway,,Fiction Novel,4,252,5
+361,Duna,Herbert Frank,,Science Fiction,5,680,5
+362,Submissão,Michel Houellebec,,Fiction Novel,3,256,5
+363,Serotonina,Michel Houellebec,,Fiction Novel,4,240,5
+364,O olho do mundo,Robert Jordan,,"Fantasy, Adventure",5,800,5
+365,A grande caçada,Robert Jordan,,"Fantasy, Adventure",5,704,5
+366,A ascensão da sombra,Robert Jordan,,"Fantasy, Adventure",5,992,5
+367,O dragão renascido,Robert Jordan,,"Fantasy, Adventure",5,656,5
+368,As chamas do paraíso,Robert Jordan,,"Fantasy, Adventure",4,1071,5
+369,O senhor do caos,Robert Jordan,,"Fantasy, Adventure",5,1072,5
+370,Uma coroa de espadas,Robert Jordan,,"Fantasy, Adventure",5,848,5
+371,Torto arado,Itamar Vieira Junior,,Fiction Novel,5,264,5
+372,Desespero,Stephen King,,"Mystery, Suspense, Horror",2,388,5
+373,À espera de um milagre,Stephen King,,"Mystery, Suspense, Horror",4,489,5
+374,It: a coisa,Stephen King,,"Mystery, Suspense, Horror",4,1104,5
+375,A hora do lobisomen,Stephen King,,"Mystery, Suspense, Horror",1,114,5
+376,O iluminado,Stephen King,,"Mystery, Suspense, Horror",3,261,5
+377,Cujo,Stephen King,,"Mystery, Suspense, Horror",5,376,5
+378,Carrie: a estranha,Stephen King,,"Mystery, Suspense, Horror",3,199,5
+379,Zona morta,Stephen King,,"Mystery, Suspense, Horror",4,479,5
+380,Salem,Stephen King,,"Mystery, Suspense, Horror",4,464,5
+381,Escuridão total sem estrelas,Stephen King,,"Mystery, Suspense, Horror",5,392,5
+382,Novembro de 63,Stephen King,,"Mystery, Suspense, Horror",5,736,5
+383,Joyland,Stephen King,,"Mystery, Suspense, Horror",5,240,5
+384,Mr. Mercedes,Stephen King,,"Mystery, Suspense, Horror",4,393,5
+385,Achados e perdidos,Stephen King,,"Mystery, Suspense, Horror",5,352,5
+386,O bazar dos sonhos ruins,Stephen King,,"Mystery, Suspense, Horror",2,480,5
+387,Último turno,Stephen King,,"Mystery, Suspense, Horror",3,384,5
+388,Ascensão,Stephen King,,"Mystery, Suspense, Horror",4,144,5
+389,Depois,Stephen King,,"Mystery, Suspense, Horror",5,192,5
+390,Quincas Borba,Machado de Assis,,Fiction Novel,4,360,5
+391,A mão e a luva,Machado de Assis,,Fiction Novel,4,128,5
+392,Helena,Machado de Assis,,Fiction Novel,5,280,5
+393,Ressurreição,Machado de Assis,,Fiction Novel,4,164,5
+394,Memorial de Aires,Machado de Assis,,Fiction Novel,4,196,5
+395,Iaiá Garcia,Machado de Assis,,Fiction Novel,4,210,5
+396,Esaú e Jacó,Machado de Assis,,Fiction Novel,5,296,5
+397,O alienista,Machado de Assis,,Fiction Novel,4,304,5
+398,Dom Casmurro,Machado de Assis,,Fiction Novel,5,400,5
+399,Tudo é rio,Carla Madeira,,Fiction Novel,3,210,5
+400,A natureza da mordida,Carla Madeira,,Fiction Novel,4,245,5
+401,Véspera,Carla Madeira,,Fiction Novel,4,280,5

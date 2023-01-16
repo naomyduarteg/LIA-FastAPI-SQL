@@ -28,7 +28,7 @@ def class_books(user_id: int, author: str, db: Session = Depends(get_db)):
     books = crud_books.get_books_by_author(db, user_id, author)
     return books
 
-@router.get("/genre/{genre}", response_model=list[Book], response_description="List books by genre")
+@router.get("/genre/{genre}", response_model=list[Book], response_description="List books by genre, where genre can be 'Fantasy, Adventure', 'Science Fiction', 'Dystopian', 'Fiction Novel', 'Mystery, Suspense, Horror', 'Graphic Novel', 'Nonfiction'")
 def class_books(user_id: int, genre: str, db: Session = Depends(get_db)):
     books = crud_books.get_books_by_genre(db, user_id, genre)
     return books
