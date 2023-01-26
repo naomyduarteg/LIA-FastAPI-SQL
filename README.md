@@ -52,6 +52,9 @@ Structure of the project:
 - In <a href="https://github.com/naomyduarteg/LIA-FastAPI-SQL/tree/main/endpoints">endpoints</a>, all the endpoints of the API are defined.
 - In <a href="https://github.com/naomyduarteg/LIA-FastAPI-SQL/tree/main/routes">routes</a>, all the API routes are defined.
 - In <a href="https://github.com/naomyduarteg/LIA-FastAPI-SQL/tree/main/schemas">schemas</a>, the structure of the data on users and books accepted by the API is defined. 
+- In <a href="https://github.com/naomyduarteg/LIA-FastAPI-SQL/blob/main/main.py">main</a>, we have the main file where FastAPI is initialized.
+- In <a href="https://github.com/naomyduarteg/LIA-FastAPI-SQL/blob/main/models.py">models</a>, the structure of the databases for users and books is defined.
+- 
 
 ## Running the API
 
