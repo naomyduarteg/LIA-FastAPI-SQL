@@ -2,8 +2,6 @@
 
 <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/fastapi-109989?style=for-the-badge&logo=FASTAPI&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white"/>
 
-![machine-learning-logistic-regression](https://user-images.githubusercontent.com/73078250/201484493-06ce7a2b-3ea1-4ae9-a561-518f722b7d0f.svg)
-
 LIA (Library In API) is as API created with Python, FastAPI and SQLite to save information about the books you read and get book recommendations.
 
 Structure of the project:
