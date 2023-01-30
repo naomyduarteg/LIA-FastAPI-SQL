@@ -55,6 +55,8 @@ Structure of the project:
 - In <a href="https://github.com/naomyduarteg/LIA-FastAPI-SQL/blob/main/main.py">main</a>, we have the main file where FastAPI is initialized.
 - In <a href="https://github.com/naomyduarteg/LIA-FastAPI-SQL/blob/main/models.py">models</a>, the structure of the databases for users and books is defined.
 
+Book recommendations are calculated using the cosine similarity. 
+
 ## Running the API
 
 1. Clone the repository
