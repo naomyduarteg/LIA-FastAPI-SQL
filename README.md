@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/fastapi-109989?style=for-the-badge&logo=FASTAPI&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white"/>
 
-LIA (Library In API) is as API created with Python, FastAPI and SQLite to save information about the books you read and get book recommendations.
+LIA (Library In API) is as API created with Python, FastAPI and SQLite to save information about the books you read and get book recommendations. These recommendations are calculated using the cosine similarity.
 
 Structure of the project:
 
@@ -53,9 +53,7 @@ Structure of the project:
 - In <a href="https://github.com/naomyduarteg/LIA-FastAPI-SQL/tree/main/routes">routes</a>, all the API routes are defined.
 - In <a href="https://github.com/naomyduarteg/LIA-FastAPI-SQL/tree/main/schemas">schemas</a>, the structure of the data on users and books accepted by the API is defined. 
 - In <a href="https://github.com/naomyduarteg/LIA-FastAPI-SQL/blob/main/main.py">main</a>, we have the main file where FastAPI is initialized.
-- In <a href="https://github.com/naomyduarteg/LIA-FastAPI-SQL/blob/main/models.py">models</a>, the structure of the databases for users and books is defined.
-
-Book recommendations are calculated using the cosine similarity. 
+- In <a href="https://github.com/naomyduarteg/LIA-FastAPI-SQL/blob/main/models.py">models</a>, the structure of the databases for users and books is defined. 
 
 ## Running the API
 
