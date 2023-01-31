@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/fastapi-109989?style=for-the-badge&logo=FASTAPI&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white"/>
 
-LIA (Library In API) is as API created with Python, FastAPI and SQLite to save information about the books you read and get book recommendations. These recommendations are calculated using the cosine similarity.
+LIA (Library In API) is as API created with Python, FastAPI and SQLite to save information about the books you read and get book recommendations. These recommendations are calculated using the cosine similarity. Read more about this metric <a href="https://naomy-gomes.medium.com/the-cosine-similarity-and-its-use-in-recommendation-systems-cb2ebd811ce1">here</a>.
 
 Structure of the project:
 
